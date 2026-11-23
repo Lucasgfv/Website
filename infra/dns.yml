@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  Route 53 hosted zone for the personal website domain.
+  Deployed first, because the nameservers (output) must be set at the
+  registrar (GoDaddy) before the TLS certificate can be validated.
+
+Parameters:
+  DomainName:
+    Type: String
+    Default: lkv11.com
+
+Resources:
+  HostedZone:
+    Type: AWS::Route53::HostedZone
+    Properties:
+      Name: !Ref DomainName
+
+Outputs:
+  HostedZoneId:
+    Value: !Ref HostedZone
+  NameServers:
+    Description: Copy these 4 values into GoDaddy > DNS > Nameservers
+    Value: !Join [", ", !GetAtt HostedZone.NameServers]
