@@ -336,10 +336,10 @@
 
       <nav class="hidden items-center gap-8 lg:flex" aria-label="Primary navigation">
         <a href="#work" class="group text-xs font-medium">
-          Work <span class="ml-1 text-black/35 transition group-hover:text-black">[04]</span>
+          Work <span class="ml-1 text-black/35 transition group-hover:text-black">[03]</span>
         </a>
         <a href="#services" class="group text-xs font-medium">
-          Services <span class="ml-1 text-black/35 transition group-hover:text-black">[04]</span>
+          Services <span class="ml-1 text-black/35 transition group-hover:text-black">[03]</span>
         </a>
         <a href="#experience" class="group text-xs font-medium">
           Experience <span class="ml-1 text-black/35 transition group-hover:text-black">[03]</span>
@@ -361,10 +361,10 @@
     <div id="mobile-menu" class="mobile-menu absolute inset-x-0 top-[78px] border-b border-black/10 bg-canvas p-4 lg:hidden">
       <nav class="site-shell flex flex-col py-2" aria-label="Mobile navigation">
         <a href="#work" class="mobile-nav-link flex items-center justify-between border-b border-line py-5 text-2xl font-medium">
-          Work <span class="text-sm text-black/35">[04]</span>
+          Work <span class="text-sm text-black/35">[03]</span>
         </a>
         <a href="#services" class="mobile-nav-link flex items-center justify-between border-b border-line py-5 text-2xl font-medium">
-          Services <span class="text-sm text-black/35">[04]</span>
+          Services <span class="text-sm text-black/35">[03]</span>
         </a>
         <a href="#experience" class="mobile-nav-link flex items-center justify-between border-b border-line py-5 text-2xl font-medium">
           Experience <span class="text-sm text-black/35">[03]</span>
@@ -409,7 +409,7 @@
           </div>
 
           <div class="hidden justify-self-end md:flex md:flex-col md:items-stretch md:gap-3">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex min-w-[132px] items-center gap-3 rounded-full border border-black/10 bg-white/70 px-4 py-2.5 text-xs font-medium transition hover:border-black hover:bg-white">
+            <a href="https://github.com/Lucasgfv" target="_blank" rel="noopener noreferrer" class="inline-flex min-w-[132px] items-center gap-3 rounded-full border border-black/10 bg-white/70 px-4 py-2.5 text-xs font-medium transition hover:border-black hover:bg-white">
               <i data-lucide="github" class="h-4 w-4" aria-hidden="true"></i>
               GitHub
             </a>
@@ -430,7 +430,7 @@
         </div>
 
         <div class="relative z-30 mt-7 flex flex-wrap gap-2 pb-8 md:hidden">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/70 px-4 py-2.5 text-xs font-medium">
+          <a href="https://github.com/Lucasgfv" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/70 px-4 py-2.5 text-xs font-medium">
             <i data-lucide="github" class="h-4 w-4" aria-hidden="true"></i> GitHub
           </a>
           <a href="https://www.linkedin.com/in/lucas-lkm" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/70 px-4 py-2.5 text-xs font-medium">
@@ -461,217 +461,107 @@
             <button type="button" class="filter-btn rounded-full bg-ink px-4 py-2 text-xs font-medium text-white" data-filter="all" aria-pressed="true">
               All Projects
             </button>
-            <button type="button" class="filter-btn rounded-full border border-black/10 px-4 py-2 text-xs font-medium transition hover:border-black" data-filter="ai" aria-pressed="false">
-              AI Powered
+            <button type="button" class="filter-btn rounded-full border border-black/10 px-4 py-2 text-xs font-medium transition hover:border-black" data-filter="web" aria-pressed="false">
+              Web Apps
             </button>
-            <button type="button" class="filter-btn rounded-full border border-black/10 px-4 py-2 text-xs font-medium transition hover:border-black" data-filter="classic" aria-pressed="false">
-              Classic Dev
+            <button type="button" class="filter-btn rounded-full border border-black/10 px-4 py-2 text-xs font-medium transition hover:border-black" data-filter="cloud" aria-pressed="false">
+              Cloud &amp; Games
             </button>
           </div>
-          <p id="project-count" class="text-xs font-medium text-muted" aria-live="polite">Showing 04 projects</p>
+          <p id="project-count" class="text-xs font-medium text-muted" aria-live="polite">Showing 03 projects</p>
         </div>
 
         <div id="project-grid" class="mt-8 grid gap-x-8 gap-y-14 lg:grid-cols-2">
-          <article class="project-card reveal" data-category="ai">
+          <!-- 01 — SalaryManagement -->
+          <article class="project-card reveal" data-category="web">
             <div class="project-visual bg-[#171719]">
               <div class="visual-inner flex flex-col bg-[#171719] p-5 text-white sm:p-7">
                 <div class="flex items-center justify-between border-b border-white/10 pb-4">
                   <div class="flex items-center gap-2">
-                    <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-white text-[10px] font-bold text-black">AI</span>
-                    <span class="text-xs font-medium">PromptFlow</span>
+                    <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-signal text-[11px] font-bold text-black">$</span>
+                    <span class="text-xs font-medium">Salary</span>
                   </div>
-                  <div class="mock-window-dots flex gap-1.5" aria-hidden="true"><span></span><span></span><span></span></div>
-                </div>
-                <div class="grid flex-1 grid-cols-[0.34fr_1fr] gap-4 pt-5">
-                  <div class="rounded-xl border border-white/10 bg-white/[0.035] p-3">
-                    <div class="mb-5 h-2 w-16 rounded-full bg-white/40"></div>
-                    <div class="space-y-3">
-                      <div class="h-2 rounded-full bg-white/10"></div>
-                      <div class="h-2 w-4/5 rounded-full bg-white/10"></div>
-                      <div class="h-2 w-3/5 rounded-full bg-white/10"></div>
-                    </div>
-                    <div class="mt-10 rounded-lg border border-[#a788ff]/30 bg-[#a788ff]/10 p-3">
-                      <i data-lucide="sparkles" class="mb-2 h-4 w-4 text-[#b9a4ff]" aria-hidden="true"></i>
-                      <div class="h-2 rounded-full bg-[#b9a4ff]/40"></div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col rounded-xl border border-white/10 bg-white/[0.035] p-4">
-                    <p class="text-[10px] uppercase tracking-[0.18em] text-white/40">AI Workspace</p>
-                    <p class="mt-2 max-w-[260px] text-lg font-medium leading-tight">Turn an idea into a clear technical plan.</p>
-                    <div class="mt-auto space-y-2.5">
-                      <div class="ml-auto w-[78%] rounded-xl bg-white p-3 text-[10px] leading-4 text-black">Build a reliable support workflow for a growing SaaS product.</div>
-                      <div class="w-[88%] rounded-xl border border-white/10 bg-white/[0.06] p-3 text-[10px] leading-4 text-white/70">Here is a structured architecture, data model, and delivery sequence...</div>
-                    </div>
+                  <div class="flex gap-3 text-[9px] uppercase tracking-[0.14em] text-white/45">
+                    <span class="text-white">Home</span><span>Cloud</span><span>Apps</span><span>Ideas</span>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="mt-5 flex flex-wrap items-center justify-between gap-3">
-              <span class="rounded-full border border-black/10 px-3 py-1.5 text-[10px] font-semibold tracking-[0.14em]">AI PROJECT</span>
-              <span class="text-xs text-muted">01 / 04</span>
-            </div>
-            <h2 class="mt-4 text-[clamp(1.5rem,2.5vw,2.15rem)] font-medium leading-tight tracking-[-0.035em]">PromptFlow — AI project planning workspace</h2>
-            <p class="mt-3 max-w-xl text-sm leading-6 text-muted">A focused interface for transforming a rough product idea into scopes, tasks, and reusable engineering prompts.</p>
-            <div class="mt-5 flex flex-wrap gap-2">
-              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">React</span>
-              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">TypeScript</span>
-              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">OpenAI API</span>
-              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">SQL</span>
-            </div>
-            <div class="mt-6 flex flex-wrap gap-5 border-t border-line pt-5 text-sm font-medium">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:underline">Live Demo <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i></a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:underline">Source Code <i data-lucide="github" class="h-4 w-4" aria-hidden="true"></i></a>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="classic">
-            <div class="project-visual bg-[#e8e7e2]">
-              <div class="visual-inner p-5 sm:p-7">
-                <div class="h-full rounded-2xl border border-black/10 bg-[#fafaf7] p-4 shadow-soft">
-                  <div class="flex items-center justify-between border-b border-black/10 pb-3">
-                    <span class="text-xs font-semibold tracking-[-0.02em]">Atelier.</span>
-                    <div class="flex gap-4 text-[8px] uppercase tracking-[0.14em] text-black/50">
-                      <span>Shop</span><span>Journal</span><span>Cart 02</span>
-                    </div>
+                <div class="grid grid-cols-3 gap-3 pt-5">
+                  <div class="rounded-xl border border-white/10 bg-white/[0.04] p-3">
+                    <p class="text-[9px] text-white/40">Income</p>
+                    <p class="mt-2 text-lg font-medium">R$ 6.4k</p>
                   </div>
-                  <div class="grid grid-cols-[1.15fr_0.85fr] gap-4 pt-4">
-                    <div class="flex min-h-[215px] flex-col justify-end rounded-xl bg-[#20201f] p-5 text-white">
-                      <p class="max-w-[210px] text-2xl font-medium leading-none tracking-[-0.05em]">Objects made for quieter spaces.</p>
-                      <span class="mt-4 w-max rounded-full border border-white/25 px-3 py-1.5 text-[9px]">Explore collection</span>
-                    </div>
-                    <div class="grid gap-3">
-                      <div class="relative overflow-hidden rounded-xl bg-[#d6c7b5]">
-                        <div class="absolute bottom-4 left-1/2 h-20 w-20 -translate-x-1/2 rounded-[50%_50%_44%_44%] bg-[#292622] shadow-[0_15px_20px_rgba(0,0,0,0.2)]"></div>
-                      </div>
-                      <div class="rounded-xl border border-black/10 p-3">
-                        <p class="text-[9px] uppercase tracking-[0.12em] text-black/45">Featured</p>
-                        <p class="mt-1 text-sm font-medium">Stoneware set</p>
-                        <div class="mt-3 flex items-center justify-between text-[9px]"><span>$89.00</span><span>View ↗</span></div>
-                      </div>
-                    </div>
+                  <div class="rounded-xl border border-white/10 bg-white/[0.04] p-3">
+                    <p class="text-[9px] text-white/40">Expenses</p>
+                    <p class="mt-2 text-lg font-medium">R$ 3.1k</p>
+                  </div>
+                  <div class="rounded-xl border border-signal/30 bg-signal/10 p-3">
+                    <p class="text-[9px] text-[#5ce4aa]">Cloud live</p>
+                    <p class="mt-2 text-lg font-medium">$ 4.82</p>
+                  </div>
+                </div>
+                <div class="mt-3 flex flex-1 flex-col rounded-xl border border-white/10 bg-white/[0.04] p-4">
+                  <p class="text-[9px] uppercase tracking-[0.16em] text-white/40">Last 6 months</p>
+                  <div class="mt-auto flex h-24 items-end gap-3" aria-hidden="true">
+                    <div class="h-[55%] flex-1 rounded-t bg-white/20"></div>
+                    <div class="h-[70%] flex-1 rounded-t bg-white/20"></div>
+                    <div class="h-[45%] flex-1 rounded-t bg-white/20"></div>
+                    <div class="h-[80%] flex-1 rounded-t bg-white/20"></div>
+                    <div class="h-[65%] flex-1 rounded-t bg-white/20"></div>
+                    <div class="h-[92%] flex-1 rounded-t bg-signal"></div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="mt-5 flex flex-wrap items-center justify-between gap-3">
-              <span class="rounded-full border border-black/10 px-3 py-1.5 text-[10px] font-semibold tracking-[0.14em]">DEVELOPMENT</span>
-              <span class="text-xs text-muted">02 / 04</span>
+              <span class="rounded-full border border-black/10 px-3 py-1.5 text-[10px] font-semibold tracking-[0.14em]">WEB APP</span>
+              <span class="text-xs text-muted">01 / 03</span>
             </div>
-            <h2 class="mt-4 text-[clamp(1.5rem,2.5vw,2.15rem)] font-medium leading-tight tracking-[-0.035em]">Atelier — Modern commerce experience</h2>
-            <p class="mt-3 max-w-xl text-sm leading-6 text-muted">A responsive storefront concept with product discovery, a clear purchase path, and a restrained editorial interface.</p>
+            <h2 class="mt-4 text-[clamp(1.5rem,2.5vw,2.15rem)] font-medium leading-tight tracking-[-0.035em]">Salary — Personal finance dashboard</h2>
+            <p class="mt-3 max-w-xl text-sm leading-6 text-muted">Track income, fixed and variable expenses, live cloud spending, app status, and an ideas kanban — with alerts, charts, and cloud sync.</p>
             <div class="mt-5 flex flex-wrap gap-2">
-              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">JavaScript</span>
               <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">React</span>
-              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">Node.js</span>
-              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">SQL</span>
+              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">Vite</span>
+              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">Tailwind CSS</span>
+              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">Supabase</span>
+              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">PostgreSQL</span>
             </div>
             <div class="mt-6 flex flex-wrap gap-5 border-t border-line pt-5 text-sm font-medium">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:underline">Live Demo <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i></a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:underline">Source Code <i data-lucide="github" class="h-4 w-4" aria-hidden="true"></i></a>
+              <a href="https://salary-management-one-nu.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:underline">Live Demo <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i></a>
+              <a href="https://github.com/Lucasgfv/SalaryManagement" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:underline">Source Code <i data-lucide="github" class="h-4 w-4" aria-hidden="true"></i></a>
             </div>
           </article>
 
-          <article class="project-card reveal" data-category="ai">
-            <div class="project-visual bg-[#dfe2e5]">
-              <div class="visual-inner flex items-center justify-center p-5 sm:p-7">
-                <div class="w-full rounded-2xl bg-[#111214] p-5 text-white shadow-soft">
-                  <div class="flex items-center justify-between border-b border-white/10 pb-4">
-                    <div>
-                      <p class="text-[10px] uppercase tracking-[0.16em] text-white/40">Document intelligence</p>
-                      <p class="mt-1 text-sm font-medium">Insight / Q3-review.pdf</p>
-                    </div>
-                    <span class="rounded-full bg-signal/15 px-3 py-1.5 text-[9px] font-medium text-[#5ce4aa]">Analysis ready</span>
-                  </div>
-                  <div class="grid grid-cols-[0.9fr_1.1fr] gap-4 pt-4">
-                    <div class="rounded-xl bg-white p-4 text-black">
-                      <div class="mb-3 h-2 w-2/3 rounded bg-black/20"></div>
-                      <div class="space-y-2">
-                        <div class="h-1.5 rounded bg-black/10"></div>
-                        <div class="h-1.5 rounded bg-black/10"></div>
-                        <div class="h-1.5 w-5/6 rounded bg-black/10"></div>
-                      </div>
-                      <div class="mt-5 rounded border border-[#f0aa76] bg-[#fff2e8] p-3">
-                        <div class="h-1.5 w-1/2 rounded bg-[#e28c4d]/50"></div>
-                        <div class="mt-2 h-1.5 rounded bg-[#e28c4d]/25"></div>
-                      </div>
-                      <div class="mt-4 space-y-2">
-                        <div class="h-1.5 rounded bg-black/10"></div>
-                        <div class="h-1.5 w-4/5 rounded bg-black/10"></div>
-                      </div>
-                    </div>
-                    <div class="flex flex-col gap-3">
-                      <div class="rounded-xl border border-white/10 bg-white/[0.05] p-4">
-                        <p class="text-[9px] uppercase tracking-[0.15em] text-white/35">Executive summary</p>
-                        <p class="mt-2 text-xs leading-5 text-white/70">Revenue movement, operating risks, and three recommended actions extracted from the report.</p>
-                      </div>
-                      <div class="grid flex-1 grid-cols-2 gap-3">
-                        <div class="rounded-xl border border-white/10 p-3">
-                          <p class="text-[9px] text-white/35">Confidence</p>
-                          <p class="mt-3 text-2xl font-medium">94%</p>
-                        </div>
-                        <div class="rounded-xl border border-white/10 p-3">
-                          <p class="text-[9px] text-white/35">Key findings</p>
-                          <p class="mt-3 text-2xl font-medium">08</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mt-5 flex flex-wrap items-center justify-between gap-3">
-              <span class="rounded-full border border-black/10 px-3 py-1.5 text-[10px] font-semibold tracking-[0.14em]">AI PROJECT</span>
-              <span class="text-xs text-muted">03 / 04</span>
-            </div>
-            <h2 class="mt-4 text-[clamp(1.5rem,2.5vw,2.15rem)] font-medium leading-tight tracking-[-0.035em]">Insight — Intelligent document analysis</h2>
-            <p class="mt-3 max-w-xl text-sm leading-6 text-muted">A Python-powered workspace that turns long documents into structured summaries, findings, and searchable context.</p>
-            <div class="mt-5 flex flex-wrap gap-2">
-              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">Python</span>
-              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">OpenAI API</span>
-              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">FastAPI</span>
-              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">React</span>
-            </div>
-            <div class="mt-6 flex flex-wrap gap-5 border-t border-line pt-5 text-sm font-medium">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:underline">Live Demo <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i></a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:underline">Source Code <i data-lucide="github" class="h-4 w-4" aria-hidden="true"></i></a>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="classic">
+          <!-- 02 — Nexo Contábil -->
+          <article class="project-card reveal" data-category="web">
             <div class="project-visual bg-[#e7e9ec]">
               <div class="visual-inner flex items-center justify-center p-5 sm:p-7">
                 <div class="w-full overflow-hidden rounded-2xl border border-black/10 bg-[#f8f9fb] shadow-soft">
                   <div class="flex items-center justify-between border-b border-black/10 bg-white px-5 py-3">
                     <div class="flex items-center gap-2">
-                      <span class="flex h-6 w-6 items-center justify-center rounded-md bg-[#315bf4] text-[9px] font-bold text-white">A</span>
-                      <span class="text-xs font-semibold">Automate</span>
+                      <span class="flex h-6 w-6 items-center justify-center rounded-md bg-[#1f3a8a] text-[9px] font-bold text-white">N</span>
+                      <span class="text-xs font-semibold">Nexo Contábil</span>
                     </div>
-                    <span class="rounded-full border border-black/10 px-2.5 py-1 text-[8px]">Run workflow</span>
+                    <span class="rounded-full bg-signal/15 px-2.5 py-1 text-[8px] font-medium text-[#0b8a54]">Admin session</span>
                   </div>
-                  <div class="grid min-h-[238px] grid-cols-[0.65fr_1fr]">
+                  <div class="grid min-h-[238px] grid-cols-[0.55fr_1fr]">
                     <div class="border-r border-black/10 p-4">
-                      <p class="text-[9px] uppercase tracking-[0.14em] text-black/40">Flows</p>
+                      <p class="text-[9px] uppercase tracking-[0.14em] text-black/40">Modules</p>
                       <div class="mt-4 space-y-2">
-                        <div class="rounded-lg bg-[#315bf4] px-3 py-2.5 text-[9px] text-white">New lead intake</div>
-                        <div class="rounded-lg border border-black/10 px-3 py-2.5 text-[9px]">Invoice reminder</div>
-                        <div class="rounded-lg border border-black/10 px-3 py-2.5 text-[9px]">Daily export</div>
+                        <div class="rounded-lg bg-[#1f3a8a] px-3 py-2.5 text-[9px] text-white">Clients</div>
+                        <div class="rounded-lg border border-black/10 px-3 py-2.5 text-[9px]">Fiscal Leve</div>
+                        <div class="rounded-lg border border-black/10 px-3 py-2.5 text-[9px]">Reports</div>
                       </div>
                     </div>
-                    <div class="relative flex items-center justify-center p-6">
-                      <div class="absolute h-px w-[65%] bg-black/15"></div>
-                      <div class="relative z-10 flex w-full items-center justify-between">
-                        <div class="rounded-xl border border-black/10 bg-white p-3 shadow-sm">
-                          <i data-lucide="webhook" class="h-5 w-5 text-[#315bf4]" aria-hidden="true"></i>
-                          <p class="mt-2 text-[9px] font-medium">Webhook</p>
-                        </div>
-                        <div class="rounded-xl border border-black/10 bg-white p-3 shadow-sm">
-                          <i data-lucide="braces" class="h-5 w-5 text-[#315bf4]" aria-hidden="true"></i>
-                          <p class="mt-2 text-[9px] font-medium">Transform</p>
-                        </div>
-                        <div class="rounded-xl border border-black/10 bg-white p-3 shadow-sm">
-                          <i data-lucide="database" class="h-5 w-5 text-[#315bf4]" aria-hidden="true"></i>
-                          <p class="mt-2 text-[9px] font-medium">Store</p>
-                        </div>
+                    <div class="p-4">
+                      <div class="flex items-center justify-between">
+                        <p class="text-[10px] font-semibold">Clients</p>
+                        <span class="rounded-md border border-black/10 px-2 py-1 text-[8px]">+ New</span>
+                      </div>
+                      <div class="mt-3 divide-y divide-black/5 rounded-lg border border-black/10 bg-white text-[9px]">
+                        <div class="flex items-center justify-between px-3 py-2.5"><span>Padaria Sol LTDA</span><span class="rounded-full bg-signal/15 px-2 py-0.5 text-[8px] text-[#0b8a54]">Up to date</span></div>
+                        <div class="flex items-center justify-between px-3 py-2.5"><span>Oficina Brasil ME</span><span class="rounded-full bg-[#fff2e8] px-2 py-0.5 text-[8px] text-[#c2621c]">Pending</span></div>
+                        <div class="flex items-center justify-between px-3 py-2.5"><span>Studio Arte MEI</span><span class="rounded-full bg-signal/15 px-2 py-0.5 text-[8px] text-[#0b8a54]">Up to date</span></div>
+                        <div class="flex items-center justify-between px-3 py-2.5"><span>Mercado Bom Preço</span><span class="rounded-full bg-signal/15 px-2 py-0.5 text-[8px] text-[#0b8a54]">Up to date</span></div>
                       </div>
                     </div>
                   </div>
@@ -679,22 +569,83 @@
               </div>
             </div>
             <div class="mt-5 flex flex-wrap items-center justify-between gap-3">
-              <span class="rounded-full border border-black/10 px-3 py-1.5 text-[10px] font-semibold tracking-[0.14em]">DEVELOPMENT</span>
-              <span class="text-xs text-muted">04 / 04</span>
+              <span class="rounded-full border border-black/10 px-3 py-1.5 text-[10px] font-semibold tracking-[0.14em]">WEB APP</span>
+              <span class="text-xs text-muted">02 / 03</span>
             </div>
-            <h2 class="mt-4 text-[clamp(1.5rem,2.5vw,2.15rem)] font-medium leading-tight tracking-[-0.035em]">Automate — API workflow builder</h2>
-            <p class="mt-3 max-w-xl text-sm leading-6 text-muted">A visual tool for connecting services, transforming payloads, and monitoring routine business processes.</p>
+            <h2 class="mt-4 text-[clamp(1.5rem,2.5vw,2.15rem)] font-medium leading-tight tracking-[-0.035em]">Nexo Contábil — Accounting management</h2>
+            <p class="mt-3 max-w-xl text-sm leading-6 text-muted">An accounting management system with secure database-backed sessions, PostgreSQL migrations, Docker for local setup, and production deploy on AWS Lightsail.</p>
             <div class="mt-5 flex flex-wrap gap-2">
-              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">JavaScript</span>
-              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">Node.js</span>
-              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">REST API</span>
+              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">Next.js</span>
+              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">TypeScript</span>
+              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">Prisma</span>
               <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">PostgreSQL</span>
+              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">Docker</span>
+              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">AWS</span>
             </div>
             <div class="mt-6 flex flex-wrap gap-5 border-t border-line pt-5 text-sm font-medium">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:underline">Live Demo <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i></a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:underline">Source Code <i data-lucide="github" class="h-4 w-4" aria-hidden="true"></i></a>
+              <a href="https://github.com/Lucasgfv/Nexo-Contabil" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:underline">Source Code <i data-lucide="github" class="h-4 w-4" aria-hidden="true"></i></a>
             </div>
           </article>
+
+          <!-- 03 — AWS pixel quiz roguelike (in development) -->
+          <article class="project-card reveal" data-category="cloud">
+            <div class="project-visual bg-[#1b1530]">
+              <div class="visual-inner flex flex-col bg-[#1b1530] p-5 font-mono text-white sm:p-7">
+                <div class="flex items-center justify-between border-b-2 border-dashed border-white/15 pb-3 text-[10px]">
+                  <span class="text-[#ff5d73]" aria-label="3 lives">♥ ♥ ♥</span>
+                  <span class="uppercase tracking-[0.2em] text-white/60">Floor 03 · VPC</span>
+                  <span class="text-[#ffd166]">◆ 120</span>
+                </div>
+                <div class="flex flex-1 items-center gap-5 pt-5">
+                  <div class="grid shrink-0 grid-cols-4 gap-0.5" aria-hidden="true">
+                    <span class="h-4 w-4"></span><span class="h-4 w-4 bg-[#ff9f1c]"></span><span class="h-4 w-4 bg-[#ff9f1c]"></span><span class="h-4 w-4"></span>
+                    <span class="h-4 w-4 bg-[#ff9f1c]"></span><span class="h-4 w-4 bg-white"></span><span class="h-4 w-4 bg-white"></span><span class="h-4 w-4 bg-[#ff9f1c]"></span>
+                    <span class="h-4 w-4 bg-[#ff9f1c]"></span><span class="h-4 w-4 bg-[#ff9f1c]"></span><span class="h-4 w-4 bg-[#ff9f1c]"></span><span class="h-4 w-4 bg-[#ff9f1c]"></span>
+                    <span class="h-4 w-4 bg-[#ff9f1c]"></span><span class="h-4 w-4"></span><span class="h-4 w-4"></span><span class="h-4 w-4 bg-[#ff9f1c]"></span>
+                  </div>
+                  <div class="flex-1 border-2 border-white/80 bg-black/30 p-3">
+                    <p class="text-[9px] uppercase tracking-[0.18em] text-[#5ce4aa]">Boss question</p>
+                    <p class="mt-2 text-[11px] leading-4">Which service controls inbound traffic to an EC2 instance?</p>
+                  </div>
+                </div>
+                <div class="mt-4 grid grid-cols-2 gap-2 text-[10px]">
+                  <span class="border-2 border-white/25 px-3 py-2">A) Route 53</span>
+                  <span class="border-2 border-[#5ce4aa] bg-[#5ce4aa]/15 px-3 py-2 text-[#5ce4aa]">B) Security Group ▶</span>
+                  <span class="border-2 border-white/25 px-3 py-2">C) CloudFront</span>
+                  <span class="border-2 border-white/25 px-3 py-2">D) IAM Role</span>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5 flex flex-wrap items-center justify-between gap-3">
+              <span class="rounded-full border border-black/10 px-3 py-1.5 text-[10px] font-semibold tracking-[0.14em]">IN DEVELOPMENT</span>
+              <span class="text-xs text-muted">03 / 03</span>
+            </div>
+            <h2 class="mt-4 text-[clamp(1.5rem,2.5vw,2.15rem)] font-medium leading-tight tracking-[-0.035em]">AWS Quest — Pixel quiz roguelike</h2>
+            <p class="mt-3 max-w-xl text-sm leading-6 text-muted">My hands-on AWS labs (EC2, EBS, VPC, RDS, DynamoDB) are becoming a pixel-art roguelike: climb floors, answer cloud questions, and beat the boss of each service.</p>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">AWS</span>
+              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">Game Design</span>
+              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">Pixel Art</span>
+              <span class="rounded-full border border-black/10 px-3 py-1.5 text-xs">Roguelike</span>
+            </div>
+            <div class="mt-6 flex flex-wrap gap-5 border-t border-line pt-5 text-sm font-medium">
+              <a href="https://github.com/Lucasgfv/AWS" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:underline">Source Code <i data-lucide="github" class="h-4 w-4" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <!-- See more: not a .project-card, so filters never hide it -->
+          <a href="https://github.com/Lucasgfv" target="_blank" rel="noopener noreferrer" class="reveal group flex min-h-[320px] flex-col justify-between rounded-[28px] border border-dashed border-black/20 p-8 transition hover:border-black hover:bg-white lg:min-h-0">
+            <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-ink text-white">
+              <i data-lucide="github" class="h-6 w-6" aria-hidden="true"></i>
+            </span>
+            <span>
+              <span class="block text-[clamp(2rem,4vw,3.4rem)] font-medium leading-none tracking-[-0.06em]">See more<br>on GitHub</span>
+              <span class="mt-4 flex items-center justify-between gap-4 text-sm text-muted">
+                Studies, labs, and other projects — github.com/Lucasgfv
+                <i data-lucide="arrow-up-right" class="h-6 w-6 shrink-0 text-ink transition group-hover:translate-x-1 group-hover:-translate-y-1" aria-hidden="true"></i>
+              </span>
+            </span>
+          </a>
         </div>
       </div>
     </section>
@@ -714,7 +665,7 @@
             <button type="button" class="service-toggle flex w-full items-center gap-4 px-5 py-6 text-left sm:px-8 sm:py-8" aria-expanded="true">
               <span class="service-index w-8 shrink-0 text-xs text-muted">01</span>
               <span class="flex-1">
-                <span class="block text-[clamp(1.45rem,3.2vw,3.1rem)] font-medium leading-tight tracking-[-0.05em]">FULL-STACK WEB DEVELOPMENT</span>
+                <span class="block text-[clamp(1.45rem,3.2vw,3.1rem)] font-medium leading-tight tracking-[-0.05em]">WEB DEVELOPMENT</span>
                 <span class="service-copy mt-2 block text-sm text-muted">Custom websites, web apps, React, Node and Python solutions.</span>
               </span>
               <i data-lucide="plus" class="service-icon h-6 w-6 shrink-0" aria-hidden="true"></i>
@@ -737,29 +688,6 @@
             <button type="button" class="service-toggle flex w-full items-center gap-4 px-5 py-6 text-left sm:px-8 sm:py-8" aria-expanded="false">
               <span class="service-index w-8 shrink-0 text-xs text-muted">02</span>
               <span class="flex-1">
-                <span class="block text-[clamp(1.45rem,3.2vw,3.1rem)] font-medium leading-tight tracking-[-0.05em]">E-COMMERCE &amp; LANDING PAGES</span>
-                <span class="service-copy mt-2 block text-sm text-muted">Responsive experiences designed for clarity and business growth.</span>
-              </span>
-              <i data-lucide="plus" class="service-icon h-6 w-6 shrink-0" aria-hidden="true"></i>
-            </button>
-            <div class="service-panel">
-              <div>
-                <div class="grid gap-6 border-t border-white/10 px-5 pb-7 pt-6 sm:px-8 lg:grid-cols-[1fr_auto] lg:items-end">
-                  <p class="max-w-2xl text-sm leading-6 text-white/65">Fast, persuasive pages with responsive layouts, focused messaging, clear calls to action, and frictionless purchase journeys.</p>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="rounded-full border border-white/15 px-3 py-1.5 text-xs text-white/70">Conversion</span>
-                    <span class="rounded-full border border-white/15 px-3 py-1.5 text-xs text-white/70">Responsive</span>
-                    <span class="rounded-full border border-white/15 px-3 py-1.5 text-xs text-white/70">Checkout</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="service-item reveal overflow-hidden rounded-2xl border border-black/10 transition-colors duration-300">
-            <button type="button" class="service-toggle flex w-full items-center gap-4 px-5 py-6 text-left sm:px-8 sm:py-8" aria-expanded="false">
-              <span class="service-index w-8 shrink-0 text-xs text-muted">03</span>
-              <span class="flex-1">
                 <span class="block text-[clamp(1.45rem,3.2vw,3.1rem)] font-medium leading-tight tracking-[-0.05em]">API &amp; AUTOMATION INTEGRATION</span>
                 <span class="service-copy mt-2 block text-sm text-muted">Python scripts, REST APIs, backend systems, and connected workflows.</span>
               </span>
@@ -781,7 +709,7 @@
 
           <article class="service-item reveal overflow-hidden rounded-2xl border border-black/10 transition-colors duration-300">
             <button type="button" class="service-toggle flex w-full items-center gap-4 px-5 py-6 text-left sm:px-8 sm:py-8" aria-expanded="false">
-              <span class="service-index w-8 shrink-0 text-xs text-muted">04</span>
+              <span class="service-index w-8 shrink-0 text-xs text-muted">03</span>
               <span class="flex-1">
                 <span class="block text-[clamp(1.45rem,3.2vw,3.1rem)] font-medium leading-tight tracking-[-0.05em]">MAINTENANCE &amp; OPTIMIZATION</span>
                 <span class="service-copy mt-2 block text-sm text-muted">SEO, performance tuning, bug fixes, and hosting setup.</span>
@@ -911,7 +839,7 @@
             <span class="inline-flex items-center gap-3"><i data-lucide="mail" class="h-4 w-4" aria-hidden="true"></i> Gmail</span>
             <i data-lucide="arrow-up-right" class="h-4 w-4 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true"></i>
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between rounded-full border border-black/10 bg-white/60 px-5 py-4 text-sm font-medium transition hover:border-black hover:bg-white">
+          <a href="https://github.com/Lucasgfv" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between rounded-full border border-black/10 bg-white/60 px-5 py-4 text-sm font-medium transition hover:border-black hover:bg-white">
             <span class="inline-flex items-center gap-3"><i data-lucide="github" class="h-4 w-4" aria-hidden="true"></i> GitHub</span>
             <i data-lucide="arrow-up-right" class="h-4 w-4 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true"></i>
           </a>
