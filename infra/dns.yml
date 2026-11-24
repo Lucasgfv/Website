@@ -15,6 +15,58 @@ Resources:
     Properties:
       Name: !Ref DomainName
 
+  # ---------- E-mail (Zoho Mail) ----------
+  # Copied from the old GoDaddy zone. Without these, mail to @lkv11.com
+  # has nowhere to go.
+
+  # MX: which servers receive mail for the domain (lower number = tried first).
+  MailMX:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneId: !Ref HostedZone
+      Name: !Ref DomainName
+      Type: MX
+      TTL: "3600"
+      ResourceRecords:
+        - 10 mx.zoho.com
+        - 20 mx2.zoho.com
+        - 50 mx3.zoho.com
+
+  # Apex TXT: Zoho domain ownership proof + SPF (who may SEND mail as @lkv11.com).
+  # Only one SPF record is allowed per name, so both values live in one record set.
+  ApexTXT:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneId: !Ref HostedZone
+      Name: !Ref DomainName
+      Type: TXT
+      TTL: "3600"
+      ResourceRecords:
+        - '"zoho-verification=zb89989767.zmverify.zoho.com"'
+        - '"v=spf1 include:zohomail.com ~all"'
+
+  # DKIM: public key that lets receivers verify Zoho's signature on our mail.
+  MailDKIM:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneId: !Ref HostedZone
+      Name: !Sub "zmail._domainkey.${DomainName}"
+      Type: TXT
+      TTL: "3600"
+      ResourceRecords:
+        - '"v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCnHmkX6uk+NLKhfcIv6raiNIO4KzEiGn9vxCgZOjmCKFpdqTT0fMUls9z3i/mDRAbPGYEvsEH1DnnFK0AlToZ7w2Ie1/L92k5bPo7kyWNyotgE95jvuLQbtB9FOQcMS14E9e1OA9P6TahuluP0pVI4i0mvcJZpo9hul7KJRNNehQIDAQAB"'
+
+  # DMARC: what receivers do with mail that fails SPF/DKIM (quarantine = spam folder).
+  MailDMARC:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneId: !Ref HostedZone
+      Name: !Sub "_dmarc.${DomainName}"
+      Type: TXT
+      TTL: "3600"
+      ResourceRecords:
+        - '"v=DMARC1; p=quarantine; adkim=r; aspf=r;"'
+
 Outputs:
   HostedZoneId:
     Value: !Ref HostedZone
