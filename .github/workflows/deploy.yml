@@ -19,10 +19,10 @@ jobs:
     # Skip until the AWS setup is done (repo variables created).
     if: vars.AWS_ROLE_ARN != ''
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Configure AWS credentials (OIDC, no stored keys)
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v6
         with:
           role-to-assume: ${{ vars.AWS_ROLE_ARN }}
           aws-region: us-east-1
