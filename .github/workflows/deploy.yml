@@ -31,7 +31,8 @@ jobs:
         # Only public files go to the bucket (never README, infra/, .github/).
         run: |
           mkdir -p dist
-          cp index.html dist/
+          cp *.html dist/
+          cp -r assets dist/
           aws s3 sync dist/ "s3://${{ vars.S3_BUCKET }}/" --delete \
             --cache-control "public, max-age=300"
 
