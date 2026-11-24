@@ -16,6 +16,12 @@ Parameters:
     Type: String
     Default: Lucasgfv/Website
     Description: owner/repo allowed to deploy
+  GitHubImmutableRepo:
+    Type: String
+    Default: Lucasgfv@92546655/Website@1312284260
+    Description: >
+      owner@ownerId/repo@repoId. Repos created after 2026-07-15 send this
+      immutable format in the OIDC "sub" claim (IDs from GET /repos/{owner}/{repo}).
   CreateGitHubOidcProvider:
     Type: String
     Default: "true"
@@ -203,8 +209,11 @@ Resources:
             Condition:
               StringEquals:
                 token.actions.githubusercontent.com:aud: sts.amazonaws.com
-                # Only pushes to main of this repo may deploy.
-                token.actions.githubusercontent.com:sub: !Sub "repo:${GitHubRepo}:ref:refs/heads/main"
+                # Only pushes to main of this repo may deploy. A list means "any of":
+                # new immutable format (with numeric IDs) and the classic format.
+                token.actions.githubusercontent.com:sub:
+                  - !Sub "repo:${GitHubImmutableRepo}:ref:refs/heads/main"
+                  - !Sub "repo:${GitHubRepo}:ref:refs/heads/main"
       Policies:
         - PolicyName: deploy-site # least privilege: this bucket + this distribution only
           PolicyDocument:
